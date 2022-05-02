@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      #navbar{
+        height: 80px;
+        display: flex;
+        background-color: rgb(248, 246, 145);
+        justify-content: space-evenly;
+        text-align: center;
+      }
+      #search_input{
+        width: 950px;
+        height: 35px;
+        border:1px solid rgb(17, 17, 16);
+        border-radius: 20px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        /* margin-top: 20px; */
+      }
+      #news{
+        margin-left: 100px;
+      }
+      #container{
+        display: flex;
+        background-color: rgb(248, 246, 145);
+        /* border: 1px solid black; */
+        justify-content: space-evenly;
+      }
+      #sidebar{
+        width: 25%;
+        border: 1px solid rgb(40, 13, 190);
+        text-align: center;
+        row-gap: 10px;
+      }
+      #results{
+        width: 73%;
+        border: 1px solid teal;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="navbar"></div>
+    
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <div id="container">
+      <div id="sidebar">
+        <a href="/"><h3 id="in">india</h3></a>
+        <a href="/"><h3 id="ch">china</h3></a>
+        <a href="/"><h3 id="us">usa</h3></a>
+        <a href="/"><h3 id="uk">uk</h3></a>
+        <a href="/"><h3 id="nz">Newzeland</h3></a>
+      </div>
+      <div id="results"></div>
+    </div>
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+    
+  </body>
+</html>
+<script src="./scripts/index.js" type="module"></script>
